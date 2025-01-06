@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timetable Example</title>
+    <style>
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 20px 10px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        caption {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .vertical-text {
+            writing-mode: vertical-rl;
+            text-orientation: upright; 
+            font-size: 10pxpx;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>TIME TABLE</h2>
+
+    <table border="3" cellspacing="10" cellpadding="30">
+        <caption>SECTION-C</caption>
+        
+        <!-- HEADER -->
+            <tr>
+                <th rowspan="1">Period</th>
+                <th rowspan="1">1</th>
+                <th rowspan="1">2</th>
+                <th rowspan="1">3</th>
+                <th rowspan="1">4</th>
+                <th rowspan="2">12.40-1.40PM</th>
+                <th rowspan="1">5</th>
+                <th rowspan="1">6</th>
+                <th rowspan="1">7</th>
+                <th rowspan="1">8</th>
+            </tr>
+            
+            <tr>
+              <th rowspan="1">day</th>
+                <th rowspan="1">9.00-9.50AM</th>
+                <th rowspan="1">9.50-10.40AM</th>
+                <th rowspan="1">11.00-11.50AM</th>
+                <th rowspan="1">11.50-12.40PM</th>
+                <th rowspan="1">1.40-2.30PM</th>
+                <th rowspan="1">2.30-3.20PM</th>
+                <th rowspan="1">3.20-4.10PM</th>
+                <th rowspan="1">4.10-5.00PM</th>
+            </tr>
+        
+            <tr>
+                <th>MON</th>
+                <td>SE</td>
+                <td>ADSAA</td>
+                <td>MEFA</td>
+                <td>OS</td>
+                <td rowspan="6" class="vertical-text">LUNCH</td>
+                <td colspan="3">II CSE C-FSD</td>
+                <td>CRT</td>
+            </tr>
+            <tr>
+                <th>TUE</th>
+                <td colspan="2">II CSE C-DT&I</td>
+                <td>ADSAA</td>
+                <td>P&S</td>
+                <td>MEFA</td>
+                <td>OS</td>
+                <td>SE</td>
+                <td>CRT</td>
+            </tr>
+            <tr>
+                <th>WED</th>
+                <td>ADSAA</td>
+                <td colspan="3">II CSE C-OS LAB</td>
+                <td>SE</td>
+                <td>P&S</td>
+                <td>OS</td>
+                <td>MEFA</td>
+                <td>CRT</td>
+            </tr>
+            <tr>
+                <th>THU</th>
+                <td>MEFA</td>
+                <td>P&S</td>
+                <td>FSD</td>
+                <td>OS</td>
+                <td>ADSAA</td>
+                <td>P&S</td>
+                <td>SE</td>
+                <td>CRT</td>
+            </tr>
+            <tr>
+               <th>FRI</th>
+                <td>OS</td>
+                <td>ADSAA</td>
+                <td>P&S</td>
+                <td>SE</td>
+                <td>MEFA</td>
+                <td colspan="2">II CSE C-DT&I</td>
+                <td>CRT</td>
+            </tr>
+            <tr>
+               <th>SAT</th>
+                <td>P&S</td>
+                <td>ADSAA</td>
+                <td>SE</td>
+                <td>MEFA</td>
+                <td>OS</td>
+                <td colspan="3">II CSE C-ADSAA LAB</td>
+            </tr>
+        
+    </table>
+
+</body>
+</html>
