@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed, Tilted Background</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 200vh; /* height of page to scroll*/
+            background-image: url('https://i.pinimg.com/736x/80/be/83/80be837030e85be460fe4954386ff4fe.jpg');
+            background-position: center 50%;
+            background-size: auto 100%;
+            background-attachment: fixed;
+            background-repeat: repeat-x;
+            transform: rotate(15deg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        .content {
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Background Image Demo</h1>
+        <p>The page demonstrates a background image fixed halfway down, repeated horizontally, and remaining in place during scrolling.</p>
+    </div>
+</body>
+</html>
