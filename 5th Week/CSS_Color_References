@@ -1,0 +1,52 @@
+//Write a program to demonstrate the various ways you can reference a color in CSS
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Reference Examples in CSS</title>
+    <style>
+        .color-name {
+            background-color: Red;
+            color: white;
+        }
+        .color-hex {
+            background-color: #1E90FF;
+            color: white;
+        }
+        .color-rgb {
+            background-color: rgb(34, 139, 34);
+            color: white;
+        }
+        .color-rgba {
+            background-color: rgba(255, 99, 71, 0.7);
+            color: Black;
+        }
+        .color-hsl {
+            background-color: hsl(240, 100%, 50%);
+            color: white;
+        }
+        .color-hsla {
+            background-color: hsla(120, 60%, 70%, 0.6);
+            color: Black;
+        }
+
+        .color-box {
+            padding: 20px;
+            margin: 10px;
+            font-size: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="color-box color-name">Color Name: Red</div>
+    <div class="color-box color-hex">Hex Value: #1E90FF</div>
+    <div class="color-box color-rgb">RGB Value: rgb(34, 139, 34) (Green)</div>
+    <div class="color-box color-rgba">RGBA Value: rgba(255, 99, 71, 0.7)</div>
+    <div class="color-box color-hsl">HSL Value: hsl(240, 100%, 50%)</div>
+    <div class="color-box color-hsla">HSLA Value: hsla(120, 60%, 70%, 0.6)</div>
+
+</body>
+</html>
