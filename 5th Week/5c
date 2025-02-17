@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Font and Text Properties</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .font-size {
+            font-size: 45px;
+        }
+
+        .font-weight {
+            font-weight: bold;
+        }
+
+        .font-style {
+            font-style: italic;
+        }
+
+        .text-decoration {
+            text-decoration: underline;
+        }
+
+        .text-transform {
+            text-transform: uppercase;
+        }
+
+        .text-align {
+            text-align: center;
+        }
+
+        .container {
+            text-align: left;
+            margin: 20px;
+        }
+
+        .container p {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <p class="font-size">TARUN</p>
+        <p class="font-weight">Tarun Sri Venkata Sai</p>
+        <p class="font-style">Tarun Sri Venkata Sai</p>
+        <p class="text-decoration">Tarun Sri Venkata Sai</p>
+        <p class="text-transform">Tarun Sri Venkata Sai</p>
+        <p class="text-align">Thank You</p>
+    </div>
+
+</body>
+</html>
