@@ -12,23 +12,30 @@
       h2 {
         text-align: center;
       }
+      .center {
+        text-align: center;
+      }
     </style>
 </head>
 <body>
 
-    <h1 style="">Embedding Audio and Video</h1>
+    <h1>Embedding Audio and Video</h1>
     <h2>Audio Example</h2>
   
-    <audio controls>
-        <source src="audio-example.mp3" type="audio/mp3">
-        Your browser does not support the audio element.
-    </audio>
+    <div class="center">
+        <audio controls>
+            <source src="audio-example.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
 
     <h2>Video Example</h2>
-    <video width="640" height="360" controls>
-        <source src="video-example.mp4" type="video/mp4">
-        Your browser does not support the video element.
-    </video>
+    <div class="center">
+        <video width="640" height="360" controls>
+            <source src="video-example.mp4" type="video/mp4">
+            Your browser does not support the video element.
+        </video>
+    </div>
 
 </body>
 </html>
