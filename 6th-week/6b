@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            background-color: rgb(47, 47, 238);
+            padding: 10px;
+            color: aliceblue;
+            
+        }
+        button:hover{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript Output Methods</h1>
+   
+    <button onclick="show()">Show Alert</button>
+    
+    <button onclick="doc()"> Write to Document</button>
+   
+    <button onclick="log()">Login to console</button>
+   
+    <button onclick="update()">Update inner HTML</button>
+    <p id="6e">before changing update text</p>
+   
+    <script>
+        function show()
+        {
+            alert("hello alert");
+        }
+        function doc()
+        {
+            document.write("Program runned 100 percentage");
+        }
+        function log()
+        {
+            console.log("hello log");
+        }
+        function update()
+        {
+            document.getElementById("6e").innerHTML="hello update";
+        }
+    </script>
+</body>
+</html>
