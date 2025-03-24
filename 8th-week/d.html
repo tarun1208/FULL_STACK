@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Looping</title>
+</head>
+<body>
+
+    <h2>Display Object Data</h2>
+    
+    <button onclick="printForIn()">For-In Loop</button>
+    <button onclick="printForEach()">ForEach Loop</button>
+    <button onclick="printForOf()">For-Of Loop</button>
+
+    <p id="output">Click a button to display object data.</p>
+
+    <script>
+        let student = {
+            name: "Ayaan",
+            age: 9,
+            course: "Naval Architecture",
+            grade: "A"
+        };
+
+        function printForIn() {
+            let result = "Using For-In Loop:<br>";
+            for (let key in student) {
+                result += `${key}: ${student[key]}<br>`;
+            }
+            document.getElementById("output").innerHTML = result;
+        }
+
+        function printForEach() {
+            let result = "Using ForEach Loop:<br>";
+            Object.keys(student).forEach(key => {
+                result += `${key}: ${student[key]}<br>`;
+            });
+            document.getElementById("output").innerHTML = result;
+        }
+
+        function printForOf() {
+            let result = "Using For-Of Loop:<br>";
+            for (let [key, value] of Object.entries(student)) {
+                result += `${key}: ${value}<br>`;
+            }
+            document.getElementById("output").innerHTML = result;
+        }
+    </script>
+
+</body>
+</html>
