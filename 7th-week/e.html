@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Object Methods</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>JavaScript String Object Methods</h1>
+
+    <p id="output">Original String: " Hello, JavaScript! "</p>
+
+    <button onclick="toUpperCase()">Uppercase</button>
+    <button onclick="toLowerCase()">Lowercase</button>
+    <button onclick="findLength()">String Length</button>
+    <button onclick="getChar()">Character at Index 7</button>
+    <button onclick="replaceString()">Replace "JavaScript" with "World"</button>
+    <button onclick="trimString()">Trim Whitespace</button>
+    <button onclick="splitString()">Split by Comma</button>
+
+    <script>
+        let text = " Hello, JavaScript! ";
+
+        function updateOutput(newText) {
+            document.getElementById("output").innerText = "Result: " + newText;
+        }
+
+        function toUpperCase() {
+            updateOutput(text.toUpperCase());
+        }
+
+        function toLowerCase() {
+            updateOutput(text.toLowerCase());
+        }
+
+        function findLength() {
+            updateOutput("Length: " + text.length);
+        }
+
+        function getChar() {
+            updateOutput("Character at index 7: " + text.charAt(7));
+        }
+
+        function replaceString() {
+            updateOutput(text.replace("JavaScript", "World"));
+        }
+
+        function trimString() {
+            updateOutput("Trimmed: '" + text.trim() + "'");
+        }
+
+        function splitString() {
+            updateOutput("Split: " + text.split(","));
+        }
+    </script>
+
+</body>
+</html>
