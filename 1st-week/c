@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        .profile{
+            align-items: center;
+            display: inline-block;
+            margin-left: 30px;
+        }
+        a:hover{
+            text-decoration: wavy;
+        }
+        .content{
+            display: inline;
+            
+        }
+        img{
+            background-color: aqua;
+            border-radius: 50%;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Profile Links</h1>
+    <div class="profile">
+            <a href="https://www.google.co.in/" target="_blank">
+                <img src="/3135715.png" alt="Me">
+            </a>
+            <p><a href="https://www.google.co.in/" target="_blank">My profile</a></p>
+        </div>
+        <div class="profile">
+            <a href="https://www.google.co.in/" target="_blank">
+                <img src="/3135715.png" alt="Friend">
+            </a>
+            <p><a href="https://www.google.co.in/" target="_blank">Friend Profile</a></p>
+        </div>
+</body>
+</html>
