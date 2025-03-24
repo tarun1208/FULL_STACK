@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denomination Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        #output {
+            margin-top: 20px;
+            padding: 10px;
+            border: 2px solid #007BFF;
+            background-color: #f0f8ff;
+            font-size: 18px;
+            font-weight: bold;
+            display: inline-block;
+            color: #007BFF;
+            text-align: left;
+            padding: 15px;
+        }
+        button {
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Bank Denomination Calculator</h1>
+    <button onclick="calculateDenominations()">Enter Amount</button>
+    <div id="output">Click the button to enter an amount.</div>
+
+    <script>
+        function calculateDenominations() {
+            let amount = parseInt(prompt("Enter the amount in Rs:"));
+            
+            if (isNaN(amount) || amount <= 0) {
+                alert("Please enter a valid positive amount.");
+                return;
+            }
+
+            let denominations = [100, 50, 20, 10, 5, 2, 1];
+            let result = `<strong>Denominations for Rs.${amount}:</strong><br>`;
+
+            for (let i = 0; i < denominations.length; i++) {
+                let count = Math.floor(amount / denominations[i]); // Find how many of this denomination
+                if (count > 0) {
+                    result += `${count} - Rs.${denominations[i]}'s<br>`;
+                    amount %= denominations[i]; // Find the remaining amount
+                }
+            }
+
+            document.getElementById("output").innerHTML = result;
+        }
+    </script>
+
+</body>
+</html>
