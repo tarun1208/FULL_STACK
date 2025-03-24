@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thumbnail</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center;
+        }
+        .thumbnail{
+            display: inline-block;
+            margin-left: 10px;
+        }
+        img{
+            width: 200px;
+            height: 200px;
+            border-radius: 25%;
+            border: 5px solid burlywood;
+        }
+        a:hover{
+        text-decoration: underline;
+        }
+    </style></head>
+<body>
+    <div class="thumbnail">
+        <a href="/images/pexels-esralogy-29463848.jpg" target="_blank">
+            <img src="/images/pexels-esralogy-29463848.jpg" alt="Me">
+        </a>
+        <p><a href="https://www.google.co.in/" target="_blank">image 1</a></p>
+    </div>
+    <div class="thumbnail">
+        <a href="images/pexels-isaak-cole-2147859173-29798552.jpg" target="_blank">
+            <img src="/images/pexels-isaak-cole-2147859173-29798552.jpg" alt="Friend">
+        </a>
+        <p><a href="https://www.google.co.in/" target="_blank">image 2</a></p>
+    </div>
+    <div class="thumbnail">
+        <a href="/images/pexels-maximilian-orlowsky-515733-30008021.jpg" target="_blank">
+            <img src="/images/pexels-maximilian-orlowsky-515733-30008021.jpg" alt="Friend">
+        </a>
+        <p><a href="https://www.google.co.in/" target="_blank">image 3</a></p>
+    </div>
+    <div class="thumbnail">
+        <a href="/images/pexels-seyma-d-152665775-29663700.jpg" target="_blank">
+            <img src="/images/pexels-seyma-d-152665775-29663700.jpg" alt="Friend">
+        </a>
+        <p><a href="https://www.google.co.in/" target="_blank">image 4</a></p>
+    </div>
+</body>
+</html>
