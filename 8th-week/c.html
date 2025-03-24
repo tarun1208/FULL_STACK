@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print 1 to 10 using Loops</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        #output {
+            margin-top: 20px;
+            padding: 10px;
+            border: 2px solid #007BFF;
+            background-color: #f0f8ff;
+            font-size: 18px;
+            font-weight: bold;
+            display: inline-block;
+            color: #007BFF;
+            text-align: left;
+        }
+        button {
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Print Numbers from 1 to 10 using Loops</h1>
+    <button onclick="printUsingFor()">For Loop</button>
+    <button onclick="printUsingWhile()">While Loop</button>
+    <button onclick="printUsingDoWhile()">Do-While Loop</button>
+    
+    <div id="output">Click a button to print numbers.</div>
+
+    <script>
+        function printUsingFor() {
+            let result = "<strong>Using For Loop:</strong><br>";
+            for (let i = 1; i <= 10; i++) {
+                result += i + " ";
+            }
+            document.getElementById("output").innerHTML = result;
+        }
+
+        function printUsingWhile() {
+            let result = "<strong>Using While Loop:</strong><br>";
+            let i = 1;
+            while (i <= 10) {
+                result += i + " ";
+                i++;
+            }
+            document.getElementById("output").innerHTML = result;
+        }
+
+        function printUsingDoWhile() {
+            let result = "<strong>Using Do-While Loop:</strong><br>";
+            let i = 1;
+            do {
+                result += i + " ";
+                i++;
+            } while (i <= 10);
+            document.getElementById("output").innerHTML = result;
+        }
+    </script>
+
+</body>
+</html>
