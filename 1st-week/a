@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Working with Lists in Html</title></head>
+    <body>
+        <h1>HTML Lists Demonstration</h1>
+        <h3>Unordered List</h3>
+        <ul>
+            <li>B.tech</li>
+            <li>M.tech</li>
+            <li>Ph.d</li>
+        </ul>
+        <h3>Ordered List</h3>
+        <ol>
+            <li>CSE</li>
+            <li>IT</li>
+            <li>ECE</li>
+        </ol>
+        <h3 >Nested List</h3>
+        <ul>
+            <li>II Year</li>
+            <ul>
+                <li>Section-A</li>
+                <li>Section-B</li>
+                <li>Section-C</li>
+            </ul>
+            <li>III Year</li>
+            <ul>
+                <li>Section-A</li>
+                <li>Section-B</li>
+            </ul>
+        </ul>
+        <h3>Ordered List Inside an Unordered List</h3>
+        <ul>
+            <li>Programming Languages</li>
+            <ol>
+                <li>Python</li>
+                <li>Java</li>
+                <li>C++</li>
+            </ol>
+            <li>Databases</li>
+            <ol>
+                <li>MySQL</li>
+                <li>PostgreSQL</li>
+            </ol>
+        </ul>
+        <h3>Definition List</h3>
+        <p>HTML</p>
+        <p>HyperText Markup Language - the standard markup language for creating web pages.</p>
+        <p>CSS</p>
+        <p>Cascading Style Sheets - used for styling HTML elements.</p>
+        <p>JavaScript</p>
+        <p>A programming language used to create dynamic and interactive web content.</p>
+
+    </body>
+
+</html>
