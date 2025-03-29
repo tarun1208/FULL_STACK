@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form Validation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        form {
+            display: inline-block;
+            text-align: left;
+            padding: 20px;
+            border: 2px solid #007BFF;
+            background-color: #f0f8ff;
+            border-radius: 10px;
+        }
+        input {
+            width: 95%;
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #output {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Registration Form</h1>
+
+    <form onsubmit="return validateForm()">
+        <label>Name:</label>
+        <input type="text" id="name" placeholder="Enter your name">
+
+        <label>Mobile:</label>
+        <input type="text" id="mobile" placeholder="Enter your mobile number">
+
+        <label>Email:</label>
+        <input type="text" id="email" placeholder="Enter your email">
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <p id="output"></p>
+
+    <script>
+        function validateForm() {
+            let name = document.getElementById("name").value;
+            let mobile = document.getElementById("mobile").value;
+            let email = document.getElementById("email").value;
+            let output = document.getElementById("output");
+
+            // Name validation (Starts with a letter, followed by alphanumeric, at least 6 chars)
+            let namePattern = /^[A-Za-z][A-Za-z0-9]{5,}$/;
+            if (!namePattern.test(name)) {
+                output.innerHTML = "Invalid Name! It must start with an alphabet and be at least 6 characters long.";
+                return false;
+            }
+
+            // Mobile validation (Exactly 10 digits, numbers only)
+            let mobilePattern = /^[0-9]{10}$/;
+            if (!mobilePattern.test(mobile)) {
+                output.innerHTML = "Invalid Mobile Number! It must contain exactly 10 digits.";
+                return false;
+            }
+
+            // Email validation (Format: xxxxx@xxxxx.xxx)
+            let emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            if (!emailPattern.test(email)) {
+                output.innerHTML = "Invalid Email! Please enter a valid email format.";
+                return false;
+            }
+
+            output.innerHTML = "Registration Successful!";
+            output.style.color = "green";
+            return false; // Prevent actual form submission for demo purposes
+        }
+    </script>
+
+</body>
+</html>
