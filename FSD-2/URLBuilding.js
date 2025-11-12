@@ -22,17 +22,17 @@ app.get("/link",(req,res)=>{
     );
 })
 
-
-npm create vite@latest 5a
-y
-react
-js
-no
-yes
-npm i
-npm run dev
-
 app.listen(3050,()=>{
     console.log("http://localhost:3050")
 })
+
+
+// npm create vite@latest 5a
+// y
+// react
+// js
+// no
+// yes
+// npm i
+// npm run dev
 
