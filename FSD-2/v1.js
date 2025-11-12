@@ -1,0 +1,43 @@
+// app.js
+const express = require('express');
+const app = express();
+const port = 3000;
+
+// Middleware to parse JSON bodies
+app.use(express.json());
+
+// 1️⃣ Basic route
+app.get('/', (req, res) => {
+    res.send('Welcome to the Express.js example!');
+});
+
+// 2️⃣ Route parameters example: GET /users/123
+app.get('/users/:id', (req, res) => {
+    const userId = req.params.id;
+    res.send(`User ID received: ${userId}`);
+});
+
+// 3️⃣ Query parameters example: GET /search?q=nodejs&page=2
+app.get('/search', (req, res) => {
+    const query = req.query.q;
+    const page = req.query.page || 1;
+    res.send(`Search query: ${query}, Page: ${page}`);
+});
+
+// 4️⃣ POST request with JSON body
+// Example: POST /users with { "name": "Alice" }
+app.post('/users', (req, res) => {
+    const name = req.body.name || "sample";
+    res.status(201).send(`User '${name}' created successfully!`);
+});
+
+// 5️⃣ URL building example
+app.get('/info', (req, res) => {
+    const fullUrl = `${req.protocol}://${req.get('host')}${req.originalUrl}`;
+    res.send(`Full URL of this request: ${fullUrl}`);
+});
+
+// Start server
+app.listen(port, () => {
+    console.log(`Server running at http://localhost:${port}`);
+});
